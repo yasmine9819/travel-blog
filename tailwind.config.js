@@ -1,7 +1,7 @@
-const colors= require('tailwindcss/colors') ;
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ['./src/**/*.js', './public/index.html'],
+  purge: ["./src/**/*.js", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -9,11 +9,18 @@ module.exports = {
       blue: colors.lightBlue,
       red: colors.rose,
       pink: colors.fuchsia,
+      white: colors.white,
+    },
+    fontFamily: {
+      logo: ["Brush Script Std"],
+      title: ["Book Antiqua"],
     },
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      fontSize: ["hover", "focus"],
+    },
   },
   plugins: [],
-}
+};
