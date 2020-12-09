@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between w-full p-5 pl-20 pr-20 ">
+    <nav className="flex justify-between w-full max-w-screen-xl p-5 pl-20 pr-20 m-auto">
       <div>
         <a href="#" className="text-2xl font-medium text-gray-500 font-logo">
           TravelBlog

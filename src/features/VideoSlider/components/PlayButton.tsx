@@ -23,7 +23,7 @@ export default function PlayButton({
         )}
       ></div>
       <text>{title}</text>
-      <button className="w-5" onClick={onVideoLinkChange}>
+      <button className="w-5 focus:outline-none" onClick={onVideoLinkChange}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
