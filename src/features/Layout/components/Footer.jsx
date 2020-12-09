@@ -1,5 +1,4 @@
 import React from "react";
-import twitter from "../../../resources/icons/twitter.svg";
 
 export default function Footer() {
   return (
@@ -119,7 +118,7 @@ export default function Footer() {
         </li>
         <li className="flex mt-10 border ">
           <input
-            class="shadow appearance-none   py-2 px-3 placeholder-gray-300 bg-gray-900 w-full"
+            className="w-full px-3 py-2 text-white placeholder-gray-300 bg-gray-900 shadow appearance-none focus:outline-none"
             placeholder="Your E-mail address"
           />
           <button className="focus:outline-none hover:bg-gray-500">

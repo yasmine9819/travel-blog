@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import "./index.css";
 import Layout from "./features/Layout";
+import Slider from "./features/Slider";
 
 function App() {
   return (
     <Layout>
-      <div> hello</div>
+      <Slider />
     </Layout>
   );
 }
