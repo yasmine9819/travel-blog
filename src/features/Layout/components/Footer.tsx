@@ -124,7 +124,7 @@ export default function Footer() {
             />
             <button className="focus:outline-none hover:bg-gray-500">
               <svg
-                class="w-4 h-4 mr-2"
+                className="w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="white   "
