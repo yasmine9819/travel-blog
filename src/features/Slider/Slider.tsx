@@ -8,22 +8,27 @@ interface Image {
 }
 export default function Slider() {
   const [image, setImage] = useState<Image>({
-    url: "https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg",
+    url:
+      "https://www.conicaltravel.com/wp-content/uploads/2020/03/4.-Myanmar-Conical-Travel-1911x695.jpg",
     title: "Traveling is easier than you think!",
   });
-  const onImageChange = (image: Image) => {
+
+  const [imageNumber, setImageNumber] = useState(1);
+
+  const onImageChange = (image: Image, imageNumber: number) => {
     setImage(image);
+    setImageNumber(imageNumber);
   };
 
   const images: Image[] = [
     {
       url:
-        "https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg",
+        "https://www.conicaltravel.com/wp-content/uploads/2020/03/4.-Myanmar-Conical-Travel-1911x695.jpg",
       title: "Traveling is easier than you think!",
     },
     {
       url:
-        "https://www.conicaltravel.com/wp-content/uploads/2020/03/4.-Myanmar-Conical-Travel-1911x695.jpg",
+        "https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg",
       title: "You can go anywhere, anytime !",
     },
     {
@@ -43,7 +48,8 @@ export default function Slider() {
         {images.map((image: Image, key: number) => (
           <SliderButton
             number={key + 1}
-            onImageChange={() => onImageChange(image)}
+            active={imageNumber == key + 1}
+            onImageChange={() => onImageChange(image, key + 1)}
           />
         ))}
       </div>

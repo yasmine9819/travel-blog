@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from "./Menu";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleMenuChange = () => {
+    isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true);
+  };
+
   return (
     <nav className="flex justify-between w-full p-5 pl-20 pr-20 m-auto max-w-7xl">
       <div>
@@ -9,7 +15,10 @@ export default function Navbar() {
         </a>
       </div>
 
-      <button className="w-10 focus:outline-none lg:hidden xl:hidden">
+      <button
+        className="w-10 focus:outline-none lg:hidden xl:hidden "
+        onClick={handleMenuChange}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -24,6 +33,7 @@ export default function Navbar() {
           />
         </svg>
       </button>
+      <Menu open={isMenuOpen} />
       <ul className="flex flex-row md:hidden sm:hidden xs:hidden">
         <li className="pr-10 text-gray-500 uppercase ">
           <a

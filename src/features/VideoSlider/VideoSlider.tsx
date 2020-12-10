@@ -24,7 +24,7 @@ export default function VideoSlider() {
         {videoLinks.map((link: string, key: number) => (
           <PlayButton
             title={`Video ${key + 1}`}
-            active={videoNumber == key + 1 ? true : false}
+            active={videoNumber == key + 1}
             onVideoLinkChange={() => onVideoLinkChange(link, key + 1)}
           />
         ))}
