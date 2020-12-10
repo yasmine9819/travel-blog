@@ -2,15 +2,15 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full p-20 bg-gray-900 ">
-      <div className="flex justify-between max-w-screen-xl m-auto">
+    <footer className="w-full pt-20 pb-20 bg-gray-900 xl:p-20 lg:p-20 md:pl-5 md:pr-5 ">
+      <div className="justify-between m-auto max-w-7xl xs:text-center sm:text-center xs:space-y-5 sm:space-y-5 sm:w-1/2 xs:w-1/2 xl:flex lg:flex md:flex">
         <ul>
           <li>
             <a href="#" className="text-2xl font-medium text-white font-logo">
               TravelBlog
             </a>
           </li>
-          <li className="flex pt-4 space-x-2">
+          <li className="flex pt-4 space-x-2 xs:justify-center sm:justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="white"
@@ -27,7 +27,7 @@ export default function Footer() {
             </svg>
             <text className="text-gray-300">{"0123-456-789"}</text>
           </li>
-          <li className="flex pt-2 space-x-2">
+          <li className="flex pt-2 space-x-2 xs:justify-center sm:justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="white"
@@ -44,7 +44,7 @@ export default function Footer() {
             </svg>
             <text className="text-gray-300">{"travel@gmail.com"}</text>
           </li>
-          <li className="flex pt-5 space-x-2">
+          <li className="flex pt-5 space-x-2 xs:justify-center sm:justify-center">
             <svg
               viewBox="0 0 512 512"
               fill="white"
@@ -134,7 +134,7 @@ export default function Footer() {
             </button>
           </li>
         </ul>
-        <ul>
+        <ul className="xs:hidden sm:hidden">
           <li className="text-gray-400 uppercase ">
             <a href="#" className="font-semibold hover:text-white">
               Home

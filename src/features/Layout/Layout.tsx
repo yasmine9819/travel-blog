@@ -6,7 +6,7 @@ export default function Layout({ children }: any) {
   return (
     <div className="container w-full h-screen max-w-none">
       <Navbar />
-      <main className="max-w-screen-xl m-auto ">{children}</main>
+      <main className="m-auto overflow-hidden max-w-7xl">{children}</main>
       <Footer />
     </div>
   );

@@ -19,7 +19,8 @@ export default function PlayButton({
       <div
         className={classnames(
           "w-20 h-0.5   ",
-          active ? "bg-gray-700" : "bg-gray-500"
+          active ? "bg-gray-700" : "bg-gray-500",
+          "md:hidden xs:hidden sm:hidden"
         )}
       ></div>
       <text>{title}</text>

@@ -18,9 +18,9 @@ export default function VideoSlider() {
     "https://www.youtube.com/embed/KwQvyYzcOJU",
   ];
   return (
-    <div className="flex items-center">
+    <div className="items-center xl:flex lg:flex">
       <Slide link={videoLink} />
-      <div>
+      <div className="md:justify-center xs:justify-center sm:justify-center md:flex sm:flex xs:flex">
         {videoLinks.map((link: string, key: number) => (
           <PlayButton
             title={`Video ${key + 1}`}

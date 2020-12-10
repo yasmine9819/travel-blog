@@ -34,21 +34,19 @@ export default function Slider() {
   ];
 
   return (
-    <>
-      <div className="flex flex-col items-center h-full m-8">
-        <div className="flex w-full overflow-x-hidden bg-white rounded h-96">
-          <Slide image={image.url} title={image.title} />
-        </div>
-
-        <div className="flex mt-4">
-          {images.map((image: Image, key: number) => (
-            <SliderButton
-              number={key + 1}
-              onImageChange={() => onImageChange(image)}
-            />
-          ))}
-        </div>
+    <div className="flex flex-col items-center h-full m-8 md:m-1 sm:m-1 xs:m-1">
+      <div className="flex w-full overflow-x-hidden bg-white rounded h-96">
+        <Slide image={image.url} title={image.title} />
       </div>
-    </>
+
+      <div className="flex mt-4">
+        {images.map((image: Image, key: number) => (
+          <SliderButton
+            number={key + 1}
+            onImageChange={() => onImageChange(image)}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
